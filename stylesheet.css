@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Cinzel+Decorative:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f2f9f7;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: #65caef;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+.cart{
+    position: relative;
+    background-color: #65caef;
+    color: rgb(36, 61, 59);
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.cart:hover{
+    font-size: 21px;
+    color: black;
+}
+.cartamount{
+    font-size: 9px;
+    background-color: rgb(255, 58, 58);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+.item{
+    border: 1px solid white;
+    border-radius: 1px;
+    text-align: left;
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 2px 9px 5px lightblue;
+}
+.item:hover{
+    border: 0px solid lightblue;
+    box-shadow: 2px 9px 5px lightblue;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.bi-plus-square{
+    color: green;
+}
+.bi-dash-square{
+    color: red;
+}
+.bi-dash-square:hover{
+    color: #3f3e3b;
+    font-size: 17px;
+}
+.bi-plus-square:hover{
+    color: #4a4948;
+    font-size: 17px;
+}
+.shop{
+ display: grid;
+ grid-template-columns: repeat(4,223px);
+ gap: 30px;
+ justify-content: center;
+ margin-bottom: 100vh;
+}
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+
+.image{
+    border: 2px solid rgb(112, 201, 233);
+    border-radius: 23px;
+    width: 100%;
+}
+.quantity{
+    font-size: large;
+}
+p{
+    font-size: 12px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #65caef;
+    padding: 45px;
+
+}
+.links-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    gap: 25px;
+}
+.text-center{
+    text-align: center;
+    color: black;
+}
+.home, .checkout, .remove{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.home:hover{
+    height: 25px;
+    width: 95px;
+    font-size: 12px;
+    background-color: lightgreen;
+}
+.checkout{
+    background-color: lightgreen;
+}
+.checkout:hover{
+    font-size: 14px;
+}
+.remove{
+    background-color: lightcoral;
+}
+.remove:hover{
+        font-size: 14px;
+}
+.bi-trash3{
+    color: rgb(246, 4, 4);
+    font-weight: bold;
+    font-size: 19px;
+}
+.bi-trash3:hover{
+    color: #353434;
+    font-size: 18px;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 420px);
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100vh;
+}
+.homecartitems{
+    border: 2px solid rgb(55, 193, 174);
+    border-radius: 5px;
+    display: flex;
+    margin-top: 44px;
+    box-shadow: 2px 9px 5px lightblue;
+}
+.titile-price-x{
+    width: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 32px;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.manes{
+    font-size: larger;
+}
+.pricecart{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: small;
+
+}
+.nono{
+    display: flex;
+    padding-left: 12px;
+    padding-top: 33px;
+}
+.total{
+    font-size: 17px;
+    margin-top: 63px;
+    margin-left: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
